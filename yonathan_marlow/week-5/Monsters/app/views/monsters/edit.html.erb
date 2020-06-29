@@ -1,0 +1,31 @@
+<h2>Edit the monster</h2>
+
+<form action="<%= monster_path(@monster.id) %>" method="post">
+
+  <label>
+    Kind:
+    <input name="kind" value="<%= @monster.kind %>">
+  </label>
+
+  <label>
+    Size:
+    <input name="size" value="<%= @monster.size %>" >
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @monster.image %>" >
+  </label>
+
+  <label>
+    Color:
+    <input name="color" value="<%= @monster.color %>">
+  </label>
+
+  <label>
+    Weight
+    <input type="number" value="<%= @monster.weight %>">
+  </label>
+  <button>Click to complete edit</button>
+
+</form>
