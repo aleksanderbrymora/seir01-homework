@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+body{
+  height: 100%;
+  width: 100%;
+  background: url('fortuneblur.jpg');
+  background-size:cover;
+}
+
+#container {
+  box-sizing: border-box;
+  width: 600px;
+  height: 600px;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -300px;
+  background-image: url('fortune.jpg');
+  background-size: 700px 600px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#quoteText {
+box-sizing: border-box;
+padding-top: 2em;
+position: absolute;
+height: 100px;
+width: 280px;
+left: 52%;
+top: 50%;
+margin-left: -140px;
+margin-top: -50px;
+font-family: 'Caveat Brush', cursive;
+}
