@@ -1,0 +1,30 @@
+<h2>Edit mountain</h2>
+
+<form action="<%= mountain_path(@mountain.id)%>" method="post">
+  <label>
+    Name:
+    <input name = "name" required value = "<%= @mountain.name %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name = "image" value = "<%= @mountain.image %>" >
+  </label>
+
+  <label>
+    Country:
+    <input name = "country" value = "<%= @mountain.image %>">
+  </label>
+
+  <label>
+    Height:
+    <input type="number" name = "height">
+  </label>
+
+  <label>
+    First to Climb:
+    <input name = "climber">
+  </label>
+
+  <button>Update Mountain</button>
+</form>
