@@ -1,5 +1,6 @@
 
-const fetchBook = function () {
+const fetchBook = function (event) {
+  event.preventDefault();
   const book = document.getElementById('searchRequest').value
   const xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://www.googleapis.com/books/v1/volumes?q=title:'+book);
@@ -24,7 +25,4 @@ const fetchBook = function () {
 document.getElementById('fetch').addEventListener('click', fetchBook)
 
 const form = document.querySelector('form');
-const booksearch = function (event) {
-  event.preventDefault();
-};
-form.addEventListener('submit', booksearch);
+form.addEventListener('submit', fetchBook);
