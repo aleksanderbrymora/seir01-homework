@@ -10,6 +10,7 @@
 }
 #iss-container img {
     width: 8%;
+    height: 8%;
     position: absolute;
     /* left: 50%; 
     top: 50%; */
@@ -18,4 +19,14 @@ div.images {
     position: relative;
     left: 0; 
     top: 0;
+}
+.breadcrumb{
+    width:  0.5%;
+    height: 0.5%;
+    position: absolute;
+
+}
+
+#iss-image {
+    z-index: 1
 }
