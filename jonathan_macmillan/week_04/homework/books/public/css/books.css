@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:ital,wght@1,500&display=swap');
+
+body {
+  background-color: #55473f;
+}
+
+.container {
+  background-color: #f1dec2;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+div.title {
+  background-image: url(/img/books.jpg);
+  opacity: 0.8;
+  padding: 4em;
+  border: 2px solid black;
+  height: 4em;
+  box-shadow: 0px 3px 3px black;
+}
+
+
+div#title {
+  position: relative;
+  top: -11em;
+}
+
+div#title nav {
+  text-align: right;
+}
+
+div#title nav a {
+  background-color: #363028;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px black;
+  padding: 5px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  color: white;
+  margin-right: 9px;
+  font-family: times;
+}
+
+div#title h1 {
+  font-size: 63px;
+  font-family: 'Cinzel', serif;
+  text-shadow: 1px 1px 1px beige;
+  margin: -8px;
+}
+
+div#title p {
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  text-shadow: 2px 2px 3px black;
+  margin: 13px;
+  font-family: 'Lora', serif;
+}
+
+.content {
+  top: -9em;
+  position: relative;
+  text-align: left;
+}

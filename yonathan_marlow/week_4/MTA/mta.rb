@@ -1,7 +1,7 @@
 # require 'pry'
 require 'rainbow'
 
-
+## THE ATHETICS AND USER INPUT BELOW
 mta_stops = {
   'N' => ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'],
   'L' => ['8th', '6th', 'Union Square', '3rd', '1st'],
@@ -29,7 +29,7 @@ def get_station (stops, verb)  #local parameters for the function (line 11-46)
 end
 
 def plan_trip stops, line1, stop_on, line2, stop_off # everything is within the function
-
+#LOGIC IS BELOW
   index_stop_on = stops[line1].find_index(stop_on) #define the index of stop on,
   index_stop_off = stops[line2].find_index(stop_off)#define the index of stop off,
   index_uq_line1 = stops[line1].find_index('Union Square') #define the index of union square in first line,
@@ -60,8 +60,8 @@ end
 
 puts "Welcome to the MTA"
 puts "-=" * 40
-source_station = get_station(mta_stops, 'coming to')
-destination_station = get_station(mta_stops, 'leaving at')
+source_station = get_station(mta_stops, 'departing from?')
+destination_station = get_station(mta_stops, 'heading to?')
 line1 = source_station[0]
 stop_on = source_station[1]
 line2 = destination_station[0]

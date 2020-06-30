@@ -1,0 +1,19 @@
+Broadway
+
+Theatres
+
+id        name        address       owned_by        image       capacity
+intg      text        text          text            text         date
+          LCT
+          Broadway  1681 Bway, NY, NY Schubert Org              1924
+
+
+
+
+
+
+Productions
+
+id        name        opened        closed          image       awards
+intg      text        date          date            text        text
+          War Horse   2011          2013                        6 Tony Awards

@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 
 mta = {
   "line_n" => [ 'Times Square', '34th', '28th', '23rd', 'Union Square', '8th' ],
@@ -47,4 +47,4 @@ puts "Your journey continues through the following stops: #{ stops_second_journe
 puts "#{ nums_first_journey + nums_second_journey } stops in total."
 puts '=+' * 20
 
-#binding pry
+binding pry
