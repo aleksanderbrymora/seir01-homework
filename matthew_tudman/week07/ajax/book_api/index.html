@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book API</title>
+</head>
+<body>
+  <h1>Book Search</h1>
+  <form method="GET" id="search_form">
+    <label for="">
+      Book title:
+      <input type="search" id="book_title" placeholder="AJAX" autofocus>
+      <button id="fetch">Fetch Book</button>
+    </label>
+  </form>
+  <div id="box">
+    <img id="cover">
+    <h4 id="author"></h4>
+    <h5 id="publish"></h5>
+  </div>
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/book_api.js" charset="utf-8"></script>
+</body>
+</html>
