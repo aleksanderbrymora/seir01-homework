@@ -1,0 +1,19 @@
+<%= form_for @theatre do |t| %>
+  <%= t.label :name %>
+  <%= t.text_field :name, :required => true, :autofocus => true %>
+
+  <%= t.label :address %>
+  <%= t.text_field :address %>
+
+  <%= t.label :owner %>
+  <%= t.text_field :owner %>
+
+  <%= t.label :capacity %>
+  <%= t.number_field :capacity %>
+
+  <%= t.label :image %>
+  <%= t.url_field :image, :required => true %>
+
+
+  <%= t.submit %>
+<% end  %>

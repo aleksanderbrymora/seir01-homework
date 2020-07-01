@@ -1,0 +1,9 @@
+a, img {
+  padding: 2em;
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+a {
+  margin-top: 100px;
+}

@@ -1,0 +1,19 @@
+<h2><%= @theatre.name  %></h2>
+
+
+<%= image_tag @theatre.image, :class => 'feature' %>
+<ul>
+  <li>Address: <%= @theatre.address %></li>
+  <li>Owner: <%= @theatre.owner%></li>
+  <li>Capacity: <%= @theatre.capacity%></li>
+  <% @theatre.productions.each do |production|%>
+    <%= link_to image_tag(production.image, :class => 'thumb'), production %>
+  <% end %>
+</ul>
+
+
+
+<div class="controls">
+  <%= link_to 'Edit Theatre', edit_theatre_path(@theatre)  %>
+  <%= link_to 'Delete Theatre', @theatre, :method => 'delete' %>
+</div>

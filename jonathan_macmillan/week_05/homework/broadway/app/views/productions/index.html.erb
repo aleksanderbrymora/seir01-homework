@@ -1,0 +1,11 @@
+<h1>Productions</h1>
+
+<% @productions.each do |p| %>
+  <ul>
+    <li>Title: <%= link_to p.title, p %></li>
+    <li>Director: <%= p.director %></li>
+    <li>Opening: <%= p.opening %></li>
+    <li>Closing: <%= p.closing %></li>
+    <li>Awards: <%= p.awards %></li>
+  </ul>
+<% end  %>
