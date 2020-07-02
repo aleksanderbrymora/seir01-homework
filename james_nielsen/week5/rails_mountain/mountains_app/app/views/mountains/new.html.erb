@@ -1,0 +1,30 @@
+<h2>This is a new Mountain</h2>
+
+<form action="<%= mountains_path %>" method="post">
+  <label>
+    Name:
+    <input name = "name" required>
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name = "image" >
+  </label>
+
+  <label>
+    Country:
+    <input name = "country">
+  </label>
+
+  <label>
+    Height:
+    <input type="number" name = "height">
+  </label>
+
+  <label>
+    First to Climb:
+    <input name = "climber">
+  </label>
+
+  <button>Create Mountain</button>
+</form>

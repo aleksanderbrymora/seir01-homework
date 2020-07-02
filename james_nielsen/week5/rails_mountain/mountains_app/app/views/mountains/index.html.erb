@@ -1,0 +1,16 @@
+<h2>All Mountains</h2>
+
+<% @mountains.each do |mountain| %>
+<p>
+  <%= link_to mountain.name, mountain_path(mountain.id) %>
+is
+<%= mountain.height %>
+meters high, and is in
+<%= mountain.country %>
+it was first climbed by
+<%= mountain.climber %>
+though im sure the local guides/sherpas have something to say about that.
+
+
+</p>
+<% end %>

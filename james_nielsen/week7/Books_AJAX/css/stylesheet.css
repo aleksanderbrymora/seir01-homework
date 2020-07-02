@@ -1,0 +1,81 @@
+body {
+  background-color: #fff1e1;
+}
+
+img {
+  border-radius: 10px;
+}
+
+#bookSearch {
+  border-radius: 5px;
+  background: #fff1e1;
+  border-color: #1d3c45;
+  border-top: none;
+  border-right: none;
+}
+
+#button {
+  border-radius: 5px;
+  background: #fff1e1;
+  border-color: #1d3c45;
+  border-top: none;
+  border-right: none;
+  color: #1d3c45;
+}
+
+#container {
+  min-width: 600px;
+  min-height: 600px;
+  position:fixed;
+  display:block;
+  left: 50%;
+  top: 50%;
+  margin-left: -375px;
+  margin-top: -375px;
+  background-color: #d2601a;
+  padding: 4em;
+  border-radius: 20px;
+  box-shadow: -7px 7px 0px #1d3c45;
+  text-align: center;
+  color: #1d3c45;
+}
+
+h1 {
+  padding-top: 35%;
+}
+
+.bookCover {
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid white; */
+  max-width: 400px;
+  text-align: center;
+}
+
+.rating {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* border: 2px solid white; */
+  max-width: 500px;
+  height: 50px;
+  line-height: 50px;
+  color: #1d3c45;
+}
+
+a {
+  color: #1d3c45;
+}
+
+/* .info {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  /* border: 2px solid white; */
+  max-width: 500px;
+  color: #1d3c45;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+
+} */

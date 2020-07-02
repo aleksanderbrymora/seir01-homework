@@ -1,0 +1,16 @@
+<h2><%= @mountain.name %></h2>
+
+
+<!-- planet image here -->
+<ul>
+<li>Name: <%= @mountain.name %> </li>
+<li>Image: <%= @mountain.image %></li>
+<li>Country: <%= @mountain.country %></li>
+<li>Height: <%= @mountain.height %></li>
+<li>First to Summit: <%= @mountain.climber %> </li>
+</ul>
+
+<div class = "controls">
+<%= link_to 'Edit Mountain', edit_mountain_path(@planet.id) %>
+
+</div>
