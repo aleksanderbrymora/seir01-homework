@@ -9,7 +9,7 @@ All of the replacing must happen on the initial form of the string (look at exam
 ```js
 replacing("'The quick brown fox', 'o,$'")
 // => "The quick br$wn f$x"
-replacing("'quick', 'q,k' 'k,4'")
+replacing("'quick', 'q,k', 'k,4'")
 // => Output kuic4
 // Note that is is not 4uic4
 ```
