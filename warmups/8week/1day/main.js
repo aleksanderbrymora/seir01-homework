@@ -1,14 +1,30 @@
+// const pairwise = function (arr, sum) {
+// 	const pairs = [];
+// 	arr.forEach(function (element, index) {
+// 		const found = arr.indexOf(sum - element);
+// 		if (found >= 0) {
+// 			if (!pairs.includes(found) || !pairs.includes(index)) {
+// 				pairs.push(found, index);
+// 			}
+// 		}
+// 	});
+
+// 	return pairs.reduce(function (acc, curr) {
+// 		return acc + curr;
+// 	}, 0);
+// };
+
 const pairwise = (arr, sum) => {
 	const pairs = [];
 	arr.forEach((element, index) => {
 		const found = arr.indexOf(sum - element);
 		if (found >= 0) {
-			if (!pairs.includes(index) || !pairs.includes(found)) {
-				pairs.push(index, found);
+			if (!pairs.includes(found) || !pairs.includes(index)) {
+				pairs.push(found, index);
 			}
 		}
 	});
-	console.log(pairs);
+
 	return pairs.reduce((acc, curr) => acc + curr);
 };
 
