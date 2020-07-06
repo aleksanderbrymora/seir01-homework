@@ -1,0 +1,15 @@
+<h1><%= @author.name %></h1>
+
+<%= image_tag @author.image, :class => 'feature', :alt => @author.name %>
+
+<ul>
+  <li>Name: <%= @author.name %></li>
+  <li>Nationality: <%= @author.nationality %></li>
+  <li>date of birth: <%= @author.dob %></li>
+  <li>genre: <%= @author.genre %> </li>
+  <li>wiki: <%= @author.wiki %> </li>
+</ul>
+
+<div class="controls">
+<%= link_to 'Edit Author', edit_author_path(@author) %>
+</div>
