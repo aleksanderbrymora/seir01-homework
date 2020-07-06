@@ -1,0 +1,12 @@
+<h1>Broadway Theatres</h1>
+
+
+<% @theatres.each do |t| %>
+  <%= image_tag t.image, :class => 'thumb' %>
+  <ul>
+    <li>Name: <%= link_to t.name, t %></li>
+    <li>Address: <%= t.address %></li>
+    <li>Owner: <%= t.owner %></li>
+    <li>Capacity: <%= t.capacity %></li>
+  </ul>
+<% end %>

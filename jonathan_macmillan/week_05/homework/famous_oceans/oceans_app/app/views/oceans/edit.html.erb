@@ -1,0 +1,29 @@
+
+<h3>update form </h3>
+
+<form class="" action="<%= ocean_path(@ocean.id) %>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" required value="<%= @ocean.name  %>">
+  </label>
+
+  <label>
+    Age:
+    <input type="integer" name="age" value="<%= @ocean.age  %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @ocean.image  %>">
+  </label>
+
+  <label>
+    Hustle:
+    <input type="text" name="hustle" value="<%= @ocean.hustle  %>">
+  </label>
+
+  <button>Update Ocean </button>
+
+
+</form>

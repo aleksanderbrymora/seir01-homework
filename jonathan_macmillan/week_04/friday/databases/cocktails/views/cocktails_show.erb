@@ -1,0 +1,9 @@
+<h2><%= @cocktail['name'].capitalize %></h2>
+
+<p>Base Spirit: <%= @cocktail['base_spirit'] %></p>
+<p>Ingredient List: <%= @cocktail['ingredients'] %></p>
+
+
+
+<a href="/cocktails/<%= @cocktail['id'] %>/edit">Edit Cocktail</a>
+<a href="/cocktails/<%= @cocktail['id'] %>/delete">Delete Cocktail</a>

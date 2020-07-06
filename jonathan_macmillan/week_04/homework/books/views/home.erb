@@ -1,0 +1,25 @@
+ <!-- 'https://www.googleapis.com/books/v1/volumes?q=title:#{@title}'
+
+pry
+require 'httparty'
+HTTParty
+params[:book_name] # "1984"
+book_url =
+
+info = HTTParty.get book_url; #semi colon protects dump of information
+info.class
+info.keys
+info["items"] %> -->
+
+
+<h2>Welcome to the Front Desk Search Catalogue</h2>
+<p>Enter the name of your favorite book to see cover art, book information, and links on where you can order a copy.</p>
+
+
+<!-- <form class="" action="/result">
+  <label>
+    Book Title:
+    <input type="text" placeholder="The Grapes of Wrath" name="book_name" required>
+  </label>
+  <button>Search Book</button>
+</form> -->

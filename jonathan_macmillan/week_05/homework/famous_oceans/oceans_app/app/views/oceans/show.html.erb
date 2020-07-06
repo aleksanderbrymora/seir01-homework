@@ -1,0 +1,18 @@
+<h2>Here should be an individual ocean</h2>
+
+
+<!-- some sort of image will eventually go here using some rails hack  -->
+
+<%= image_tag @ocean.image, :class => 'feature' if @ocean.image.present? %>
+
+
+<p><%= @ocean.name %></p>
+<p><%= @ocean.age %></p>
+<p><%= @ocean.hustle %></p>
+
+
+
+<div class="controls">
+  <%= link_to 'Edit Ocean', edit_ocean_path(@ocean.id) %>
+  <%= button_to 'Delete Ocean', ocean_path(@ocean.id), :method => 'delete' %>
+</div>

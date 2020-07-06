@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+  <title>ISS Location</title>
+</head>
+<body>
+  <h1>Current ISS Location Finder</h1>
+
+  <iframe
+  src='https://api.mapbox.com/styles/v1/mapbox/streets-v11.html?title=true&zoomwheel=false&access_token=pk.eyJ1Ijoic29vamluaG9uZzkxIiwiYSI6ImNrYzF4cjMycDF4cmwydXAzeXJtZWN0bGMifQ.qF88XE0ugCGwPQ6msC4rOA#15/37.771/-122.436' width='50%' height='400px'>
+  </iframe>
+
+  <div><button id="fetch">Fetch the data</button></div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/current_iss.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<h2>Edit Cocktail</h2>
+
+<form class="" action="/cocktails/<%= @cocktail['id'] %>" method="post">
+
+  <label>Name:
+    <input type="text" name="name" placeholder="<%= @cocktail['name'] %>" required>
+  </label>
+
+  <label>Base Spirit:
+    <input type="text" name="base_spirit" placeholder="<%= @cocktail['base_spirit'] %>" required>
+  </label>
+
+  <label>Ingredients:
+    <input type="text" name="ingredients" placeholder="<%= @cocktail['ingredients'] %>">
+  </label>
+
+  <label>Recipe:
+    <input type="text" name="recipe" placeholder="<%= @cocktail['recipe'] %>">
+  </label>
+
+  <label>Image:
+    <input type="text" name="image" placeholder="<%= @cocktail['image'] %>">
+  </label>
+
+
+  <button type="submit" name="button">Edit Cocktail</button>
+
+</form>

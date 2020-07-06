@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/books.css">
+  <title>Books</title>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="title">
+    </div>
+    <div id="title">
+      <nav>
+        <a href="/">Front Desk</a>
+      </nav>
+      <h1>Bibliophilery</h1>
+      <p>"Outside of a dog, a book is a man's best friend. Inside of a dog, it's too dark to read." <br> <strong>~ Groucho Marx</strong></p>
+    </div>
+
+    <div class="content">
+          <%= yield %>
+          <form class="" action="/result">
+            <label>
+              Book Title:
+              <input type="text" placeholder="The Grapes of Wrath" name="book_name" required>
+            </label>
+            <button>Search Book</button>
+          </form>
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+  </div>
+</body>
+</html>
