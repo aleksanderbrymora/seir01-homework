@@ -1,0 +1,31 @@
+<h2>Add a new monster</h2>
+
+<form action="<%= monsters_path %>" method="post">
+
+  <label>
+    Kind:
+    <input name="kind" placeholder="dragon" required>
+  </label>
+
+  <label>
+    Size:
+    <input name="size" placeholder="Large" >
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://" >
+  </label>
+
+  <label>
+    Color:
+    <input name="color" placeholder="Blue" >
+  </label>
+
+  <label>
+    Weight
+    <input type="number" name="weight" placeholder="500" >
+  </label>
+  <button>Click to add</button>
+
+</form>

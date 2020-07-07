@@ -1,0 +1,15 @@
+<h1><%= @monster.kind %> </h1>
+
+<%= image_tag @monster.image, :class => 'feature' if @monster.image.present? %>
+
+<ul>
+  <li>Kind: <%= @monster.kind %></li>
+  <li>Size:<%= @monster.size %></li>
+  <li>Color: <%= @monster.color %></li>
+  <li>Weight<%= @monster.weight %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit monster', edit_monster_path(@monster.id) %>
+  <%= button_to 'Delete Monster', monster_path(@monster.id), :method => 'delete' %>
+</div>

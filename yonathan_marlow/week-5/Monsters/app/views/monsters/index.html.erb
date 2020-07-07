@@ -1,0 +1,10 @@
+<h1>All Monsters</h1>
+
+
+<% @monsters.each do |monster| %>
+  <p>
+    <%= link_to monster.kind, monster_path(monster.id)%>
+    is
+    <%= monster.color %>
+  </p>
+<% end %>
