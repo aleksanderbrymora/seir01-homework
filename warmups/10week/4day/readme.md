@@ -1,5 +1,5 @@
 # Prime Factors
-A [prime number](https://en.wikipedia.org/wiki/Prime_number) is any number greater than one that is only divisible by itself.
+A [prime number](https://en.wikipedia.org/wiki/Prime_number) is any number greater than one that is only divisible by itself and one.
 
 - 1 is not a prime number (it is not greater than 1).
 - 2 is a prime number (it is greater than one and is only evenly divisible by itself and 1).
