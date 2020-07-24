@@ -1,5 +1,9 @@
-const happyNumbers = (amount, numbers = [], current = 1) => {
-	const isHappy = (num, cycle = []) => {
+const happyNumberz = (
+	amount: number,
+	numbers: number[] = [],
+	current: number = 1,
+): number[] => {
+	const isHappy = (num: number, cycle: number[] = []): boolean => {
 		const potentiallyHappyNumber = num
 			.toString()
 			.split('')
@@ -12,8 +16,8 @@ const happyNumbers = (amount, numbers = [], current = 1) => {
 
 	if (numbers.length === amount) return numbers;
 	return isHappy(current)
-		? happyNumbers(amount, [...numbers, current], current + 1)
-		: happyNumbers(amount, numbers, current + 1);
+		? happyNumberz(amount, [...numbers, current], current + 1)
+		: happyNumberz(amount, numbers, current + 1);
 };
 
-console.log(happyNumbers(10));
+console.log(happyNumberz(10));
