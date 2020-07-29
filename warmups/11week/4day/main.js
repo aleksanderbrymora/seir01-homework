@@ -1,5 +1,20 @@
-// prettier-ignore
-const dashatize = (str) => Number.isNaN(str) ? str : str.toString().split('').filter((d) => d !== '-').reduce((acc,curr,i,all) => (acc += parseInt(curr) % 2 !== 0 && i !== 0 && i !== all - 1 ? `-${curr}` : curr)).replace(/--/g,'-');
+// const dashatize = (str) => Number.isNaN(str) ? str : str.toString().split('').filter((d) => d !== '-').reduce((acc,curr,i,all) => (acc += parseInt(curr) % 2 !== 0 && i !== 0 && i !== all - 1 ? `-${curr}` : curr)).replace(/--/g,'-');
+
+const dashatize = (str) =>
+	Number.isNaN(str)
+		? str
+		: str
+				.toString()
+				.split('')
+				.filter((d) => d !== '-')
+				.reduce(
+					(acc, curr, i, all) =>
+						(acc +=
+							parseInt(curr) % 2 !== 0 && i !== 0 && i !== all - 1
+								? `-${curr}`
+								: curr),
+				)
+				.replace(/--/g, '-');
 
 console.log(dashatize(274));
 console.log(dashatize(5311));
