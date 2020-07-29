@@ -1,11 +1,8 @@
 const wordyCalc = (calcQuestion) => {
-	// Grabbing a passed string of instructions from the arguments
 	const question = calcQuestion || process.argv[2];
-
-	// Parsing only interesting part which is number operator number
-	const matches = question.match(/(-?\d+) (.*) (-?\d+)/);
-
-	// destructuring relevant parts
+	const matches = question.match(
+		/(-?\d+) (plus|minus|multiplied by|divided by) (-?\d+)/,
+	);
 	const [full, a, operator, b] = matches;
 
 	let out = full + ' is ';
@@ -13,21 +10,14 @@ const wordyCalc = (calcQuestion) => {
 		case 'plus':
 			out += parseInt(a) + parseInt(b);
 			break;
-
 		case 'minus':
 			out += parseInt(a) - parseInt(b);
 			break;
-
-		case 'divided by':
-			out += parseInt(a) / parseInt(b);
-			break;
-
 		case 'multiplied by':
 			out += parseInt(a) * parseInt(b);
 			break;
-
-		default:
-			console.log("Sorry didn't really get that");
+		case 'divided by':
+			out += parseInt(a) / parseInt(b);
 			break;
 	}
 	return out;

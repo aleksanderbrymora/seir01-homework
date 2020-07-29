@@ -1,26 +1,30 @@
 class Calc
 	def initialize question
 		@question = question
-		matches # run function that splits up the question
+		matches
 	end
+
 	def matches
-		@matches = @question.match(/(-?\d+) (.*) (-?\d+)/)
+		@matches = @question.match(/(-?\d+) (plus|minus|multiplied by|divided by) (-?\d+)/)
 	end
+
 	def first_num
 		@matches[1].to_i
 	end
+
 	def second_num
 		@matches[3].to_i
 	end
+
 	def operator
 		case @matches[2]
 		when 'plus' then :+
 		when 'minus' then :-
 		when 'multiplied by' then :*
 		when 'divided by' then :/
-		else puts 'Dont know that sorry'
 		end
 	end
+
 	def answer
 		first_num.send operator, second_num
 	end
